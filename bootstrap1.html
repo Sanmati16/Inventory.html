@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>Bookstore</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+.jumbotron{
+	background-color:orange;
+	margin-bottom:0;
+	font-family:times new roman;
+	}
+.collapse{
+	margin-bottom:50px;
+	border-radius:0;
+	background-color:gray;
+	color:white;
+}
+
+.card-body{
+	background-color:lavender;
+}
+
+a{
+	color:white;
+}
+body{
+	background-color:black;
+}
+
+li{
+	font-weight:bold;
+}
+.card-header{
+         background-color:orange;
+}
+.card-footer{
+        background-color:orange;
+}
+
+button{
+      align:right;
+}
+
+</style>
+        </head>
+        <body>
+                <div class="jumbotron">
+                        <div class="container text-center">
+                                <h1>Smrithi Bookstore</h1>
+                                <p>We help u to gain knowledge</p>
+                        </div>
+                </div>
+
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li><a class="active" href="#">HOME</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Help</a></li>
+				<li class="dropdown" width="25%"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Categories
+                                 <span class="caret"></span></a>
+                                 <ul class="dropdown-menu">
+                                   <li><a href="#">Fiction</a></li>
+                                   <li><a href="#">Poems</a></li>
+                                 </ul>
+                                </li>
+                                
+			</ul>
+                        &nbsp;&nbsp;
+
+			<input type="text" placeholder="search..." style="margin-top:8px; color:black">
+			<button type="button" value="search" style="color:black;">Search</button>
+
+
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+			</ul>
+		</div>
+
+	<!--	<div class="container">
+			<div class="row">
+				<div class ="col-sm-3">
+					      <div class="panel panel-primary">
+						   <div class="panel-heading">Python Programming</div>
+
+				                     <div class="panel-body">
+					                 <img src="image2.png "class="img-responsive" style="width:100%" alt="Python">
+						     </div>
+
+						     <div class="panel-footer">
+							Price: 450rs
+							<button type="button" class="btn btn-success">Add to cart</button>
+						     </div>
+					       </div>
+				</div>
+
+				<div class ="col-sm-3">
+                                                <div class="panel panel-danger">
+                                                	<div class="panel-heading">Java Programming</div>
+
+                                                        <div class="panel-body">
+                                                           <img src="image1.png "class="img-responsive" style="width:100%" alt="Python">
+                                                        </div>
+
+                                                        <div class="panel-footer">
+                                                            Price: 360rs
+                                                            <button type="button" class="btn btn-success">Add to cart</button>
+						       </div>
+				                </div>
+				 </div>
+
+                                  <div class ="col-sm-3">
+                                        	<div class="panel panel-primary">
+                                                       <div class="panel-heading">Web Development</div>
+
+                                                       <div class="panel-body">
+                                                          <img src="image3.png "class="img-responsive" style="width:100%" alt="Python">
+                                                       </div>
+
+                                                       <div class="panel-footer">
+                                                             Price: 550rs
+							     <button type="button" class="btn btn-success">Add to cart</button>
+						       </div>
+					       </div>
+                                   </div>
+                                               
+                                                 
+				  <div class ="col-sm-3">
+                                                <div class="panel panel-danger">
+                                                		<div class="panel-heading">Shell Scripting</div>
+
+                                                                     <div class="panel-body">
+                                                                           <img src="image4.png "class="img-responsive" style="width:100%" alt="Python">
+						                     </div>
+                                       
+                                                                     <div class="panel-footer">
+                                                                         Price: 360rs
+                                                                         <button type="button" class="btn btn-success">Add to cart</button>
+                                                                     </div>
+                                                </div>
+			          </div>
+                          </div>
+                     </div>
+
+
+
+		    <div class="container">
+                         <div class="row">
+                                   <div class ="col-sm-3">
+                                          <div class="panel panel-primary">
+                                                       <div class="panel-heading">Python Programming</div>
+
+                                                       <div class="panel-body">
+                                                           <img src="image2.png "class="img-responsive" style="width:100%" alt="Python">
+                                                       </div>
+
+                                                       <div class="panel-footer">
+                                                           Price: 450rs
+                                                           <button type="button" class="btn btn-success">Add to cart</button>
+                                                      </div>
+                                         </div>
+                                    </div>
+
+				   <div class ="col-sm-3">
+                                           <div class="panel panel-danger">
+                                                        <div class="panel-heading">Java Programming</div>
+
+                                                        <div class="panel-body">
+                                                            <img src="image1.png" class="img-responsive" style="width:100%" alt="Python">
+                                                        </div>
+
+                                                        <div class="panel-footer">
+                                                             Price: 360rs
+                                                             <button type="button" class="btn btn-success">Add to cart</button>
+                                                        </div>
+                                           </div>
+                                   </div>
+
+				   <div class ="col-sm-3">
+                                            <div class="panel panel-primary">
+                                                         <div class="panel-heading">Web Programming</div>
+
+                                                         <div class="panel-body">
+                                                           <img src="image3.png" class="img-responsive" style="width:100%" alt="Python">
+                                                         </div>
+
+                                                         <div class="panel-footer">
+                                                             Price: 360rs
+                                                             <button type="button" class="btn btn-success">Add to cart</button>
+                                                         </div>
+                                            </div>
+                                   </div>
+
+				  <div class ="col-sm-3">
+                                             <div class="panel panel-danger">
+                                                      <div class="panel-heading">Shell Scripting</div>
+
+                                                      <div class="panel-body">
+                                                           <img src="image4.png" class="img-responsive" style="width:100%" alt="Python">
+                                                      </div>
+
+                                                      <div class="panel-footer">
+                                                          Price: 360rs
+                                                          <button type="button" class="btn btn-success">Add to cart</button>
+                                                      </div>
+                                             </div>
+                                 </div>
+                       </div>
+	         </div>
+
+
+   
+   <div class="container">
+    <footer>
+      <div class="row">
+       <aside><center><p background-color="white">All rights reserved</p></center></aside>
+      </div>
+    </footer>
+  </div> -->
+
+  <div class="container">
+   <div class="row">
+    <div class="col-sm-3"> 
+     <div class="card">
+       <div class="card-header">
+          Linux shell scripting
+       </div>
+       <div class="card-body">
+         <img src="image4.png" class="img-responsive" style="width:100%" alt="Python">
+       </div>
+      <div class="card-footer">
+       Price: 360rs
+       <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+  </div>
+ </div>
+
+ 
+ <div class="col-sm-3"> 
+   <div class="card">
+    <div class="card-header">
+     Python
+    </div>
+    <div class="card-body" >
+     <img src="image4.png" class="img-responsive" style="width:100%" alt="Python">
+    </div>
+    <div class="card-footer">
+       Price:$500 
+       <button type="button" class="btn btn-success btn-lg float-right"> Add to Cart</button>
+    </div>
+   </div>
+  </div>
+ 
+
+  <div class="col-sm-3">
+    <div class="card">
+     <div class="card-header">
+      Header Info
+     </div>
+    <div class="card-body" >
+     <img src="image4.png" class="img-responsive" style="width:100%" alt="Python">
+    </div>
+    <div class="card-footer">
+       Footer Info
+    </div>
+   </div>
+  </div>
+
+<div class="col-sm-3">
+   <div class="card">
+    <div class="card-header">
+     Header Info
+    </div>
+    <div class="card-body" >
+     <img src="image4.png" class="img-responsive" style="width:100%" alt="Python">
+    </div>
+    <div class="card-footer">
+       Footer Info
+    </div>
+   </div>
+  </div>
+</div>
+
+
+ </body>
+</html>
