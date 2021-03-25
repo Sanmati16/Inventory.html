@@ -1,0 +1,36 @@
+<html>
+        <head>
+                <script>
+                        function abc() {
+                        var student = [
+                                {
+                                id : 13234,
+                                name : "Sagar",
+                                phone : 4556656
+                                },
+                                        {
+                                id : 13556,
+                                name : "Rahul",
+                                phone : 4559890
+                                }]
+
+                        var tablebody ='<table border="1"><tr><td>ID</td><td>Name</td><td>Phone</td></t$
+
+                        student.forEach(function(d){
+
+                                tablebody +='<tr><td>'+d.id+'</td><td>'+d.name+'</td><td>'+d.phone+'</t$
+
+
+                        });
+
+                        tablebody += '</table>'
+                        var divabc = document.getElementById("demo").innerHTML = tablebody;
+                        }
+                </script>
+        </head>
+        <body>
+                <input type="button" value="onclicn on me" onclick="abc()"/>
+                <p id="demo"></p>
+
+ </body>
+</html>
